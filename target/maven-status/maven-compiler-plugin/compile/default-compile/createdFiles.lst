@@ -1,0 +1,10 @@
+main\java\p2p\controller\FileController$MultiParser$ParseResult.class
+main\java\p2p\utility\UploadUtil.class
+main\java\p2p\controller\FileController$CORSHandler.class
+main\java\p2p\controller\FileController$MultiParser.class
+main\java\p2p\App.class
+main\java\p2p\controller\FileController.class
+main\java\p2p\service\FileSharer$FileSenderHandler.class
+main\java\p2p\controller\FileController$UploadHandler.class
+main\java\p2p\controller\FileController$DownloadHandler.class
+main\java\p2p\service\FileSharer.class
