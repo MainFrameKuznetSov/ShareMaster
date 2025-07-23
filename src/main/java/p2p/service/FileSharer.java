@@ -17,18 +17,11 @@ public class FileSharer
         this.presentFiles=new HashMap<>();
     }
 
-    public int offerFile(String path)
+    public int offerFile(String path)throws IOException
     {
-        int port;
-        while(true)
-        {
-            port=UploadUtil.generatePort();
-            if(!presentFiles.containsKey(port))
-            {
-                presentFiles.put(port, path);
-                return port;
-            }
-        }
+        int port=UploadUtil.generatePort();
+        presentFiles.put(port,path);
+        return port;
     }
 
     public void startFileServer(int port)
