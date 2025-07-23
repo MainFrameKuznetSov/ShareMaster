@@ -29,7 +29,7 @@ public class FileSharer
         String path=presentFiles.get(port);
         if(path==null)
         {
-            System.out.println("No file found in the port "+port);
+            System.err.println("No file found in the port "+port);
             return ;
         }
 

@@ -15,11 +15,11 @@ public class UploadUtil
         for(int trial=0;trial<Math.min(MAX_TRIES,range);++trial)
         {
             int port=ThreadLocalRandom.current().nextInt(range) + START_PORT;
-            try(ServerSocket ss=new ServerSocket(port))
+            try(ServerSocket serversocket=new ServerSocket(port))
             {
                 return port;
             }
-            catch (IOException e)
+            catch(IOException e)
             {}
         }
         throw new IOException("Port not found even after "+MAX_TRIES+" trials.");
