@@ -8,6 +8,7 @@ public class UploadUtil
         final int START_PORT=49152;
         final int END_PORT=65535;
         Random rand=new Random();
-        return rand.nextInt((END_PORT-START_PORT)+START_PORT);
+        final int range=END_PORT-START_PORT+1;
+        return rand.nextInt(range)+START_PORT;
     }
 }
